@@ -1,4 +1,14 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
+#!/bin/sh
 
-npx lint-staged 
+# Linter çalıştır
+echo "Running lint..."
+npx turbo lint
+
+# Formatter çalıştır
+echo "Running formatter..."
+npx prettier --write "**/*.{js,jsx,ts,tsx,json,md}"
+
+# Formatting check
+echo "Running formatting check..."
+npx prettier --check "**/*.{js,jsx,ts,tsx,json,md}"
+
