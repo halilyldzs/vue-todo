@@ -2,13 +2,13 @@
 
 # Linter çalıştır
 echo "Running lint..."
-npx turbo lint
+npm run lint
 
 # Formatter çalıştır
 echo "Running formatter..."
-npx prettier --write "**/*.{js,jsx,ts,tsx,json,md}"
+npm run format
 
 # Formatting check
 echo "Running formatting check..."
-npx prettier --check "**/*.{js,jsx,ts,tsx,json,md}"
+npm run format -- --check
 
