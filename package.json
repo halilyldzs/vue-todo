@@ -1,6 +1,7 @@
 {
   "name": "vue-todo",
-  "version": "0.0.0",
+  "author": "Halil İbrahim YILDIZ",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
