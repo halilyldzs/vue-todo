@@ -2,6 +2,6 @@
 
 <template>
   <main>
-    <p>Home</p>
+    <p class="text-2xl font-bold">Home</p>
   </main>
 </template>
